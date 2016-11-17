@@ -1,12 +1,126 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>MDL-Static Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="resources/material/material.blue-light_blue.min.css" />
+    <link rel="stylesheet" href="resources/material/portfolio_style.css" />
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-Content of the document......
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">A world of code, closer than you think</span>
+                </span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link is-active" href="javascript:void(0);">Github Projects</a>
+                    <a class="mdl-navigation__link" href="http://ourcodeworld.com">Blog</a>
+                    <a class="mdl-navigation__link" href="http://ourcodeworld.com/about">About</a>
+                    <a class="mdl-navigation__link" href="http://ourcodeworld.com/contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="javascript:void(0);">Github Projects</a>
+                <a class="mdl-navigation__link" href="http://ourcodeworld.com">Blog</a>
+                <a class="mdl-navigation__link" href="http://ourcodeworld.com/about">About</a>
+                <a class="mdl-navigation__link" href="http://ourcodeworld.com/contact">Contact</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-grid portfolio-max-width mdl-typography--text-center">
+              <p>We like to work on open source projects, check them out !</p>
+            </div>
+            <div class="mdl-grid portfolio-max-width">
+
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Artyom.js</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Artyom.js is a robust and useful wrapper of the webkitSpeechRecognition and speechSynthesis APIs written in Javascript. Besides, artyom allows you to add dynamic commands to your web app (website).
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://sdkcarlos.github.io/sites/artyom.html">Read more</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">HoldOn.js</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                      HoldOn.js is a simple plugin that allows you to draw a div that covers all the screen and will prevent that the user clicks on element on the background while something is executed in the background
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://sdkcarlos.github.io/sites/holdon.html">Read more</a>
+                    </div>
+                </div>
+
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Cordova Filebrowser</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        A cordova implementation of NoNonsense-FilePicker for Android. This plugin allow you to select folder and files, and at the same time create folders and create files (not a file is created actually, but it will return the filepath and name of the "choosen path").
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://sdkcarlos.github.io/sites/cordova/sftp-plugin.html">Read more</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Cordova App Installed</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        This plugin allow you to check when an application is installed (with its package name) in android with cordova.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://sdkcarlos.github.io/sites/cordova/sftp-plugin.html">Read more</a>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Cordova SFTP Plugin</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        A free sftp plugin for android cordova.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://sdkcarlos.github.io/sites/cordova/sftp-plugin.html">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Our Code World &copy; 2016</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="http://ourcodeworld.com/privacy-policy">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="resources/material/material.min.js"></script>
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message": "Our Code World uses cookies to ensure you get the best experience on our website", "dismiss": "Got it!", "learnMore": "More info", "link": "http://ourcodeworld.com/privacy-policy", "theme": "light-floating"};
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
 </body>
 
 </html>
