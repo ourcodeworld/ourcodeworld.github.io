@@ -123,7 +123,7 @@ window.OurCodeWorld.Filebrowser.filePicker.single({
         console.log(err);
     }
 });</code></pre>
-
+                    <img src="../images/public/gallery-58232e2faa116.png" style="display:block;margin:auto;" title="Single filepicker dialog in Cordova"/>
                     <h4>Multi filepicker</h4>
                     <p>This method starts a native filepicker that allow you to select <strong>multiple files</strong>.</p>
                     <p>The multi method expects an object as first parameter with the following properties:</p>
@@ -153,6 +153,7 @@ window.OurCodeWorld.Filebrowser.filePicker.multi({
         console.log(err);
     }
 });</code></pre>
+                    <img src="../images/public/gallery-58233056ce4f2.png" style="display:block;margin:auto;" title="Multiple filepicker dialog in Cordova"/>
                     <h3>2. Folderpicker</h3>
                     <p>
                         The Folderpicker property (<code>OurCodeWorld.Filebrowser.folderPicker</code>) is an object that contains the methods related to the Folderpicker.
@@ -209,6 +210,10 @@ window.OurCodeWorld.Filebrowser.folderPicker.single({
         console.log(err);
     }
 });</code></pre>
+                    <img src="../images/public/gallery-58233341c4e87.png" style="display:block;margin:auto;" title="Single directory picker cordova Native"/>
+                    <p>Remember that in all the methods, you can change the start location (address) of the dialog by changing the <code>startupPath</code> (in case you want to set the default startup path omit the property or set the value to <code>"default"</code>):</p>
+                    <img src="../images/public/gallery-58232f9f67e52.png" style="display:block;margin:auto;" title="Custom filepath (downloads) on dialogs"/>
+
                     <h4>Multiple folderpicker</h4>
                     <p>This method starts a native folder browser that allow you to select <strong>multiple folders</strong>.</p>
                     <p>The single method expects an object as first parameter with the following properties:</p>
@@ -239,6 +244,7 @@ window.OurCodeWorld.Filebrowser.folderPicker.multi({
         console.log(err);
     }
 });</code></pre>
+                    <img src="../images/public/gallery-58233229e84dc.png" style="display:block;margin:auto;" title="Multi directory picker cordova Native"/>
                     <h3>3. Mixed picker</h3>
                     <p>The mixedPicker property <code>OurCodeWorld.Filebrowser.mixedPicker</code> is a function that starts a mixed file and folder picker (allow you to choose files and folders at time).</p>
                     <p>
@@ -265,6 +271,7 @@ OurCodeWorld.Filebrowser.mixedPicker({
         console.error("Error calling Hello Plugin",e);
     }
 });</code></pre>
+                    <img src="../images/public/gallery-582349f01977c.png" style="display:block;margin:auto;" title="Mixed file and directory dialog in Cordova"/>
                     <h3>4. Create file dialog</h3>
                     <p>The create file dialog provides an easy native view to create a file in the storage of the device.</p>
                     <p>
@@ -289,7 +296,7 @@ OurCodeWorld.Filebrowser.mixedPicker({
         console.error("Error calling Hello Plugin",e);
     }
 });</code></pre>
-
+                <img src="../images/public/gallery-58233822b943c.png" style="display:block;margin:auto;" title="Native create file dialog in Cordova"/>
                 </div>
             </div>
             <footer class="demo-footer mdl-mini-footer">
