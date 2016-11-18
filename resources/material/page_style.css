@@ -117,3 +117,9 @@ code {
     background-color: #f7f7f7;
     border-radius: 2px;
 }
+
+.img-responsive{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
