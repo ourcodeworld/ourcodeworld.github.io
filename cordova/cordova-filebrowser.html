@@ -1,113 +1,322 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
+    <meta name="description" content="A cordova implementation of a native file,browser picker for Android">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>MDL-Static Website</title>
+    <meta name="theme-color" content="#03a9f4">
+    <title>Cordova Filebrowser Plugin | Our Code World Github</title>
+    <meta name="keywords" content="cordova,android,file,folder,filebrowser,filepicker,folderpicker,ionic,">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="../resources/material/material.blue-light_blue.min.css" />
     <link rel="stylesheet" href="../resources/material/page_style.css" />
     <link rel="stylesheet" href="../resources/libs/prismjs/prism.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <script>/*
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-68362173-4', 'auto');
+        ga('send', 'pageview');*/
+    </script>
 </head>
 
 <body>
-  <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
         <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
-          <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Cordova Our Code World Filebrowser</span>
-            <div class="mdl-layout-spacer"></div>
-
-          </div>
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Cordova OCW Filebrowser</span>
+                <div class="mdl-layout-spacer"></div>
+            </div>
         </header>
         <div class="demo-ribbon"></div>
         <main class="demo-main mdl-layout__content">
-          <div class="demo-container mdl-grid">
-            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-            <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-              <div class="demo-crumbs mdl-color-text--grey-500">
-                Our Code World Github Pages &gt; Cordova &gt; Filebrowser
-              </div>
-              <h3>Installation</h3>
-                <p>
-                  To install the plugin, execute the following command in your terminal:
-                </p>
-                <pre><code class="lang-batch">cordova plugin add https://github.com/ourcodeworld/cordova-ourcodeworld-filebrowser.git</code></pre>
-                <p>
-                  After the installation, the object <code>OurCodeWorld.Filebrowser</code> will be available in your window. This object offers a file picker, folder picker, mixed folder and file picker and the file creation dialog.
-                </p>
+            <div class="demo-container mdl-grid">
+                <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                    <div class="demo-crumbs mdl-color-text--grey-500">
+                        Our Code World Github Pages &gt; Cordova &gt; Filebrowser
+                    </div>
+                    <h3>Installation</h3>
+                    <p>
+                        To install the plugin, execute the following command in your terminal:
+                    </p>
+                    <pre><code class="lang-batch">cordova plugin add https://github.com/ourcodeworld/cordova-ourcodeworld-filebrowser.git</code></pre>
+                    <p>
+                        After the installation, the object <code>OurCodeWorld.Filebrowser</code> will be available in your window. This object offers a file picker, folder picker, mixed folder and file picker and the file creation dialog.
+                    </p>
 
-                <h3>Features</h3>
-                <p>
-                  Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
-                </p>
-                <p>
-                  Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
-                </p>
-                <h3>Filepicker</h3>
-                <p>
-                    The filepicker property (<code>OurCodeWorld.Filebrowser.filePicker</code>) is an object that contains the methods related to the filepicker.
-                </p>
-                <div>
-                    <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin: 0 auto;">
-                      <thead>
-                        <tr>
-                          <th class="mdl-data-table__cell--non-numeric">Property</th>
-                          <th>Type</th>
-                          <th>Description</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="mdl-data-table__cell--non-numeric">single</td>
-                          <td>Function</td>
-                          <td>Start the single file picker.</td>
-                        </tr>
-                        <tr>
-                          <td class="mdl-data-table__cell--non-numeric">multi</td>
-                          <td>Function</td>
-                          <td>Start the multi file picker.</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <h3>Features</h3>
+                    <p>
+                        This plugin is a Cordova implementation for Android of the <a href="https://github.com/spacecowboy/NoNonsense-FilePicker" target="_blank">NoNonsense-FilePicker</a>, a file/directory-picker for android.
+                    </p>
+                    <ul>
+                    <li>Can select multiple items</li>
+                    <li>Select directories or files, or both</li>
+                    <li>Create new directories in the picker</li>
+                    <li>Material theme with AppCompaqt</li>
+                    </ul>
+                    <h3>1. Filepicker</h3>
+                    <p>
+                        The filepicker property (<code>OurCodeWorld.Filebrowser.filePicker</code>) is an object that contains the methods related to the filepicker.
+                    </p>
+                    <div class="table-responsive">
+                        <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin: 0 auto;">
+                            <thead>
+                                <tr>
+                                    <th class="mdl-data-table__cell--non-numeric">Property</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">single</td>
+                                    <td>Function</td>
+                                    <td>Start the single file picker.</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">multi</td>
+                                    <td>Function</td>
+                                    <td>Start the multi file picker.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4>Single filepicker</h4>
+                    <p>This method (<code>OurCodeWorld.Filebrowser.filePicker.single</code>) starts a native filepicker that allow you to select <strong>only 1 file</strong>.</p>
+                    <p>The single method expects an object as first parameter with the following properties:</p>
+                    <ul>
+                        <li><code>success</code>: a <strong>function</strong> that handles the success cordova result. The function receives as first and unique parameter an array with the paths of the selected file.</li>
+                        <li><code>error</code>: a <strong>function</strong> that handles the error cordova result. The function receives as first and unique parameter a string with the error description.</li>
+                        <li><code>startupPath</code>: [optional] a string (default value <code>"default"</code>) with a predetermined start up directory. If providen, the filebrowser will start from that location (<code>file://emulated/0/a-custom-start-path</code>)</li>
+                    </ul>
+                    <p>
+                        The following code will initialize a single filepicker:
+                    </p>
+                    <pre><code class="lang-js">// Single file selector
+window.OurCodeWorld.Filebrowser.filePicker.single({
+    success: function(data){
+        if(!data.length){
+        // No file selected
+        return;
+    }
+
+    console.log(data);
+    // Array with the file path
+    // ["file:///storage/emulated/0/360/security/file.txt"]
+    },
+    // Start in a custom directory
+    //startupPath:"/emulated/0/",
+    error: function(err){
+        console.log(err);
+    }
+});</code></pre>
+
+                    <h4>Multi filepicker</h4>
+                    <p>This method starts a native filepicker that allow you to select <strong>multiple files</strong>.</p>
+                    <p>The multi method expects an object as first parameter with the following properties:</p>
+                    <ul>
+                        <li><code>success</code>: a <strong>function</strong> that handles the success cordova result. The function receives as first and unique parameter an array with the paths of the selected files.</li>
+                        <li><code>error</code>: a <strong>function</strong> that handles the error cordova result. The function receives as first and unique parameter a string with the error description.</li>
+                        <li><code>startupPath</code>: [optional] a string (default value <code>"default"</code>)with a predetermined start up directory. If providen, the filebrowser will start from that location (<code>file://emulated/0/a-custom-start-path</code>)</li>
+                    </ul>
+                    <p>
+                        The following code will initialize a multiple filepicker:
+                    </p>
+                    <pre><code class="lang-js">// Multi file picker
+window.OurCodeWorld.Filebrowser.filePicker.multi({
+    success: function(data){
+        if(!data.length){
+            // No file selected
+            return;
+        }
+
+        console.log(data);
+        // Array with filepaths
+        // ["file:///storage/emulated/0/360/security/file.txt", "file:///storage/emulated/0/360/security/another-file.txt"]
+    },
+    // Start in a custom directory
+    //startupPath:"/emulated/0/",
+    error: function(err){
+        console.log(err);
+    }
+});</code></pre>
+                    <h3>2. Folderpicker</h3>
+                    <p>
+                        The Folderpicker property (<code>OurCodeWorld.Filebrowser.folderPicker</code>) is an object that contains the methods related to the Folderpicker.
+                    </p>
+                    <div class="table-responsive">
+                        <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--2dp" style="margin: 0 auto;">
+                            <thead>
+                                <tr>
+                                    <th class="mdl-data-table__cell--non-numeric">Property</th>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">single</td>
+                                    <td>Function</td>
+                                    <td>Start the single folder picker.</td>
+                                </tr>
+                                <tr>
+                                    <td class="mdl-data-table__cell--non-numeric">multi</td>
+                                    <td>Function</td>
+                                    <td>Start the multi folder picker.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h4>Single folderpicker</h4>
+                    <p>This method starts a native folder browser that allow you to select <strong>only 1 folder</strong>.</p>
+                    <p>The single method expects an object as first parameter with the following properties:</p>
+                    <ul>
+                        <li><code>success</code>: a <strong>function</strong> that handles the success cordova result. The function receives as first and unique parameter an array with the paths of the selected <span>folders</span>.</li>
+                        <li><code>error</code>: a <strong>function</strong> that handles the error cordova result. The function receives as first and unique parameter a string with the error description.</li>
+                        <li><code>startupPath</code>: [optional] a string (default value <code>"default"</code>)with a predetermined start up directory. If providen, the filebrowser will start from that location (<code>file://emulated/0/a-custom-start-path</code>)</li>
+                    </ul>
+                    <p>
+                        The following code will initialize a multiple filepicker:
+                    </p>
+                    <pre><code class="lang-js">// Single folder picker
+window.OurCodeWorld.Filebrowser.folderPicker.single({
+    success: function(data){
+        if(!data.length){
+            // No folder selected
+            return;
+        }
+
+        console.log(data);
+        // Array with the folder path
+        // ["file:///storage/emulated/0/360/security"]
+    },
+    // Start in a custom directory
+    //startupPath:"/emulated/0/",
+    error: function(err){
+        console.log(err);
+    }
+});</code></pre>
+                    <h4>Multiple folderpicker</h4>
+                    <p>This method starts a native folder browser that allow you to select <strong>multiple folders</strong>.</p>
+                    <p>The single method expects an object as first parameter with the following properties:</p>
+                    <ul>
+                        <li><code>success</code>: a <strong>function</strong> that handles the success cordova result. The function receives as first and unique parameter an array with the paths of the selected <span>folders</span>.</li>
+                        <li><code>error</code>: a <strong>function</strong> that handles the error cordova result. The function receives as first and unique parameter a string with the error description.</li>
+                        <li><code>startupPath</code>: [optional] a string (default value <code>"default"</code>)with a predetermined start up directory. If providen, the filebrowser will start from that location (<code>file://emulated/0/a-custom-start-path</code>)</li>
+                    </ul>
+                    <p>
+                        The following code will initialize a multiple filepicker:
+                    </p>
+                    <pre><code class="lang-js">// Multi folder selector
+window.OurCodeWorld.Filebrowser.folderPicker.multi({
+    // Start in the Download folder of the device,
+    // Note that this parameter can be provide only if you're sure that the folder exists
+    startupPath:"/storage/emulated/0/Download",
+    success: function(data){
+        if(!data.length){
+            // No folder selected
+            return;
+        }
+
+        console.log(data);
+        // Array with filepaths
+        // ["file:///storage/emulated/0/360/security/file.txt", "file:///storage/emulated/0/360/security/another-file.txt"]
+    },
+    error: function(err){
+        console.log(err);
+    }
+});</code></pre>
+                    <h3>3. Mixed picker</h3>
+                    <p>The mixedPicker property <code>OurCodeWorld.Filebrowser.mixedPicker</code> is a function that starts a mixed file and folder picker (allow you to choose files and folders at time).</p>
+                    <p>
+                        The config argument (first argument) is an object that can have the following properties:
+                    </p>
+                    <ul>
+                        <li><code>success</code>: a <strong>function</strong> that handles the success cordova result. The function receives as first and unique parameter an array with the&nbsp;selected files and folders.</li>
+                        <li><code>error</code>: a <strong>function</strong> that handles the error cordova result. The function receives as first and unique parameter a string with the error description.</li>
+                        <li><code>startupPath</code>: [optional] a string (default value <code>"default"</code>)with a predetermined start up directory. If providen, the filebrowser will start from that location (<code>file://emulated/0/a-custom-start-path</code>)</li>
+                    </ul>
+<pre><code class="lang-js">// Start mixed picker
+OurCodeWorld.Filebrowser.mixedPicker({
+    success: function(data) {
+        if(!data.length){
+            // No folder or files selected
+            return;
+        }
+
+        console.log(data);
+        // Array with the selected files and folders
+        // ["file:///storage/emulated/0/myfile.txt","file:///storage/emulated/0/folder", "file:///storage/emulated/0/other-file.txt"]
+    },
+    error: function(e) {
+        console.error("Error calling Hello Plugin",e);
+    }
+});</code></pre>
+                    <h3>4. Create file dialog</h3>
+                    <p>The create file dialog provides an easy native view to create a file in the storage of the device.</p>
+                    <p>
+    The config argument (first argument) is an object that can have the following properties:</p>
+<ul>
+    <li><code>success</code>: a <strong>function</strong> that handles the success cordova result. The function receives as first and unique parameter an array with the&nbsp;"full path of the created file"</li>
+    <li><code>error</code>: a <strong>function</strong> that handles the error cordova result. The function receives as first and unique parameter a string with the error description.</li>
+    <li><code>startupPath</code>: [optional] a string (default value <code>"default"</code>)with a predetermined start up directory. If providen, the filebrowser will start from that location (<code>file://emulated/0/a-custom-start-path</code>)</li>
+</ul>
+                    <pre><code class="lang-js">OurCodeWorld.Filebrowser.createFileDialog({
+    success: function(data) {
+        if(!data.length){
+            // No file was created
+            return;
+        }
+
+        console.log(data);
+        // Array with the imaginary created file (is up to you how to create it)
+        // ["file:///storage/emulated/0/myfile.txt"]
+    },
+    error: function(e) {
+        console.error("Error calling Hello Plugin",e);
+    }
+});</code></pre>
+
                 </div>
-                <h4>Single filepicker</h4>
-                <p>
-                  Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
-                </p>
-                <p>
-                  Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
-                </p>
-                <p>
-                  Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
-                </p>
-                <p>
-                  Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
-                </p>
-                <p>
-                  Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
-                </p>
-
             </div>
-          </div>
-          <footer class="demo-footer mdl-mini-footer">
-            <div class="mdl-mini-footer--left-section">
-              <ul class="mdl-mini-footer--link-list">
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Privacy and Terms</a></li>
-                <li><a href="#">User Agreement</a></li>
-              </ul>
-            </div>
-          </footer>
+            <footer class="demo-footer mdl-mini-footer">
+                <div class="mdl-mini-footer--left-section">
+                    <ul class="mdl-mini-footer--link-list">
+                        <li><a href="http://ourcodeworld.com">Blog</a>
+                        </li>
+                        <li><a href="http://ourcodeworld.com/privacy-policy">Privacy policy</a>
+                        </li>
+                        <li><a href="http://ourcodeworld.com/about">About Our Code World</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </main>
-      </div>
+    </div>
+
     <script src="../resources/material/material.min.js"></script>
     <script src="../resources/libs/prismjs/prism.js"></script>
     <script type="text/javascript">
-        window.cookieconsent_options = {"message": "Our Code World uses cookies to ensure you get the best experience on our website", "dismiss": "Got it!", "learnMore": "More info", "link": "http://ourcodeworld.com/privacy-policy", "theme": "light-floating"};
+        window.cookieconsent_options = {
+            "message": "Our Code World uses cookies to ensure you get the best experience on our website",
+            "dismiss": "Got it!",
+            "learnMore": "More info",
+            "link": "http://ourcodeworld.com/privacy-policy",
+            "theme": "light-floating"
+        };
     </script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
 </body>
